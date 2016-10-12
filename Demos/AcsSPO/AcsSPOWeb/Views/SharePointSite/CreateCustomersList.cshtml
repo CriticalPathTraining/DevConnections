@@ -1,0 +1,18 @@
+﻿@model AcsSPOWeb.Models.SharePointList
+
+<h2>Customers List Created</h2>
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+    <td style="width:200px;">Title</td>
+    <td>@Model.Title</td>
+  </tr>
+  <tr>
+    <td>Id</td>
+    <td>@Model.Id</td>
+  </tr>
+  <tr>
+    <td>DefaultViewUrl</td>
+    <td><a href="@Model.DefaultViewUrl">@Model.DefaultViewUrl</a></td>
+  </tr>
+</table>

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<AcsSPOWeb.Models.SharePointList>
+
+
+
+<div class="col-lg-8">
+  <h2>SharePoint Lists</h2>
+
+  <table class="table table-bordered">
+
+    @foreach (var list in Model) {
+      <tr><td><a href="@list.DefaultViewUrl">@list.Title</a></td></tr>
+    }
+
+  </table>
+
+</div>
+
+
+<div id="action_panel" class="col-lg-4">
+  <h3>Create New Lists</h3>
+
+  @Html.ActionLink("Create Customers Lists", "CreateCustomersList", "SharePointSite", new { @class = "btn btn-default" })
+
+</div>
+
+
+

@@ -1,0 +1,20 @@
+﻿@using System.Security.Claims
+
+<div class="jumbotron">
+
+@if (Request.IsAuthenticated) {
+  ClaimsPrincipal principal = ClaimsPrincipal.Current;
+  string firstName = principal.FindFirst(ClaimTypes.GivenName).Value;
+  string laststName = principal.FindFirst(ClaimTypes.Surname).Value;
+  string userName = firstName + " " + laststName;
+
+  <text>
+  <p>Welcome @userName</p>
+  </text>
+}
+else {
+  <h2>User has not logged in</h2>
+  <p>Click the sign in link in the upper right to log in.</p>
+}
+
+</div>
