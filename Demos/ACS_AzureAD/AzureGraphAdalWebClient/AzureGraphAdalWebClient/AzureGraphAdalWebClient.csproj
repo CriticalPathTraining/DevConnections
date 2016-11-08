@@ -162,7 +162,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\UserInfo\Index.cshtml" />
     <Content Include="Views\TokenViewer\AppOnlyAccessToken.cshtml" />
-    <Content Include="Secrets\AppOnlyClientCertificate01.pfx" />
+    <Content Include="Secrets\MyAppOnlyKey.pfx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

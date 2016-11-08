@@ -7,9 +7,9 @@ namespace AzureGraphSimpleWebClient {
 
   public class DemoConstants {
     
-    public const string ClientId = "3c8db355-8f09-4077-bdd2-e3472164cf65";
+    public const string ClientId = "c7d3543a-b32a-49b6-a8e1-10856ceae2c1";
 
-    public const string ClientSecret = "Fhh3gc47jlONJ32rsq43O7EWL7cHYjXaWT54xPA6p9Y=";
+    public const string ClientSecret = "62fALAJgHT33mgw04JfcJPybpc7Cc6hMrMXqJkZmmtU=";
     public static readonly string ClientSecretEncoded = HttpUtility.UrlEncode(ClientSecret);
 
     public const string TargetResource = "https://graph.windows.net";
